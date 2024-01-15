@@ -1,0 +1,161 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .heading{
+          text-align: center;
+          font-size: 20px;
+      }
+      body{
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-image: linear-gradient( to right, pink, lightblue );
+        font-family:'Lucida Sans';
+      }
+      form{
+        padding: 10px;
+        width: 300;
+        border: 2px solid ;
+        border-radius: 10px;
+        background-image: linear-gradient( to right, pink, lightblue );
+      }
+      label{
+        display:block;
+        text-align: left;
+        padding: 5px;
+      }
+      input,select,textarea{
+        width: 264px;
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid;
+        outline: none;
+        padding: 5px;
+      }
+      .gender,.lang,.nation{
+        display: flex;
+        align-items: center;
+        width: 30px;
+      }
+    .button {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px; 
+    }
+    .submit,.reset { 
+      text-align: center;
+      width: 80px;
+      border: none;
+      border-radius: 5px;
+      border: 2px solid;
+    }
+    .submit{
+    background: lightblue;
+    }
+    .reset{
+      background: pink;
+    }
+    i{
+      border: 2px solid;
+      padding: 2px;
+      margin-right: 2PX;
+    }
+    .reset:hover
+    {
+      background-color: rgba(176, 141, 147, 0.95);
+     cursor: pointer;
+    }
+    .submit:hover{
+      background-color: rgba(120, 149, 158, 0.559);
+      cursor: pointer;
+    }
+    </style>
+  </head>
+<body>
+  <div class="registrationform">
+    <div class="heading">
+    <font color="#590d22">R</font>
+    <font color="#800f2f">E</font>
+    <font color="#a4133c">G</font>
+    <font color="c9184a">I</font>
+    <font color="#ff4d6d">S</font>
+    <font color="#ff758f">T</font>
+    <font color="#ff8fa3">R</font>
+    <font color="#ffb3c1">A</font>
+    <font color="#89c2d9">T</font>
+    <font color="#61a5c2">I</font>
+    <font color="#468faf">O</font>
+    <font color="#2c7da0">N </font>
+    &nbsp;&nbsp;
+    <font color="#2a6f97">F</font>
+    <font color="#014f86">O</font>
+    <font color="#01497c">R</font>
+    <font color="#013a63">M</font>
+  </div>
+<form>
+  <label for="fname">Full Name:</label>
+  <i class="fa-solid fa-user"></i>
+  <input type="text" id="fname" name="fname" placeholder="Shivani"required >
+  <label for="phno">Phone number:</label>
+  <i class="fa-solid fa-phone"></i>
+  <input type="tel" id="phno" name="phno" maxlength="10" pattern="[0-9]{10}" placeholder="1234567890" required>
+  <label>Gender:</label>
+  <div class="gender">
+    <i class="fa-solid fa-venus-mars"></i>   
+     <input type="radio" name="gender" >Male
+    <input type="radio"  name="gender" >Female
+    <input type="radio" name="gender">Others
+  </div>
+  <label>Date Of Birth:</label>
+  <i class="fa-solid fa-calendar-days"></i>
+  <input type="date" id="dob"  required/>
+  <label>Nationality:</label>
+  <div class="nation" >
+    <i class="fa-solid fa-earth-americas"></i>    
+   <input type="radio" name="nation" >Indian
+    <input type="radio"  name="nation" >NRI
+    <input type="radio" name="nation" >Foreigner
+  </div>
+  <label for="email">Email:</label>
+  <i class="fa-regular fa-envelope"></i>
+  <input type="email" id="mail" name="mail" placeholder="abc@gmail.com" required >
+  <label for="pass">Password:</label>
+  <i class="fa-solid fa-lock"></i>
+  <input type="password" id="pass" name="pass"  required>
+  <label for="pass">Confirm Password:</label>
+  <i class="fa-solid fa-lock"></i>
+  <input type="password" id="pass" name="pass" required>
+  <label>Languages:</label>
+  <div class="lang">
+    <i class="fa-solid fa-language"></i>
+   <input type="checkbox" id="html" name="html" value="html">HTML
+  <input type="checkbox" id="css " name="css " value="css">CSS
+  <input type="checkbox" id="Java" name="Java" value="Java">JAVA
+</div>
+  <label for="course">Course:</label>
+  <i class="fa-solid fa-display"></i>
+  <select id="course" name="course" required>
+    <option >Course</option>
+    <option >AI&DS</option>
+    <option >EEE</option>
+    <option >IT</option>
+    <option >CSE</option>
+  </select>
+  <label>Address:</label>
+  <i class="fa-solid fa-house-user"></i>
+  <textarea name="address" rows="1" placeholder="Enter Your Address"></textarea>
+  <label >Upload your Document:</label>
+  <i class="fa-solid fa-cloud-arrow-up"></i>
+  <input type="file">
+  <div class="button">
+  <input type="submit" class="submit" value="Submit">
+<input type="reset" class="Reset">
+</div class>
+</form>
+</div>
+
+
+</body>
+</html>
